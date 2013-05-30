@@ -1,9 +1,21 @@
+<!doctype html>
 <html>
-  <head>
-    <title>test page</title>
-  </head>
-  <body>
-    <h1>This is some text on GitHub</h1>
-    <p>This is some updated text</p>
-  </body>
+	<head>
+		<title>Test 1</title>
+	</head>
+	<body>
+		<button id = "TestButton" >Press me</button>
+		<button id = "clear" >Clear</button>
+		<div id = "results" ></div>
+		<script src = "js/jquery.min.js"></script>
+		<script src = "js/testbutton.js"></script>
+	<script>
+		$("#TestButton").click( function() {
+			TESTBUTTON.DoIt( $("#results") );
+		} );
+		$("#clear").click( function() {
+			$( "#results" ).html( "");
+		} );
+	</script>
+	</body>
 </html>
